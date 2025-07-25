@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardew Valley - Nintendo</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="nintendo-logo">
+                    <img src="https://www.hatchwise.com/wp-content/uploads/2023/02/image-48.png" alt="Nintendo" class="logo-img">
+                </div>
+                <div class="search-container">
+                    <input type="text" placeholder="Search games, hardware, news, etc." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="header-btn">Support</button>
+                <button class="header-btn">Wish List</button>
+                <button class="header-btn">Cart</button>
+                <button class="header-btn">Log in / Sign up</button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="nav-item">
+                    <span class="nav-icon">🏪</span>
+                    My Nintendo Store
+                </div>
+                <div class="nav-item">
+                    <span class="nav-icon">🎮</span>
+                    Games
+                </div>
+                <div class="nav-item">
+                    <span class="nav-icon">🎯</span>
+                    Nintendo Switch
+                </div>
+                <div class="nav-item">
+                    <span class="nav-icon">📰</span>
+                    News & Events
+                </div>
+                <div class="nav-item">
+                    <span class="nav-icon">🎲</span>
+                    Play Nintendo
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="breadcrumb">
+            <span>Home</span> › <span>Games</span> › <span>Nintendo Switch</span>
+        </div>
+
+        <div class="game-section">
+            <div class="game-gallery">
+                <div class="main-image">
+                    <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000001801/7aa9c6cf5e7d4cecf481f18b1d7a9d79e7aab85045b22203effb2dda409bc5b7" alt="Stardew Valley" id="main-game-image">
+                </div>
+                <div class="thumbnail-gallery">
+                    <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000001801/6016d2f6d874ad4a1063a28181597427f6fe9ee207ce3c8351c10dda377b3bb4" alt="Screenshot 1" class="thumbnail active" onclick="changeMainImage(this.src)">
+                    <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000001801/dcd6f1feda032d04e7220e97e24d93d1f9c963285c88bd8e81e06a20d193054c" alt="Screenshot 2" class="thumbnail" onclick="changeMainImage(this.src)">
+                    <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000001801/767ac7ae1903bc92ab31b2e131d422c0f8dc9912fd52ce51afc984b6b6974e83" alt="Screenshot 3" class="thumbnail" onclick="changeMainImage(this.src)">
+                    <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000001801/d76a54c456854df9c9a5059eac394d744aa73fe1d7f391cf79b8a4b73bd7298b" alt="Screenshot 4" class="thumbnail" onclick="changeMainImage(this.src)">
+                    <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000001801/9c33645aee20fb323e579cd75036df000f2322de1be04662c989d42047ffbfdb" alt="Screenshot 5" class="thumbnail" onclick="changeMainImage(this.src)">
+                    <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/software/switch/70010000001801/a14b2ba7d7d59e9ab25a74871d4d41f83527cba7485cd024bbc518c1433932c0" alt="Screenshot 6" class="thumbnail" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="esrb-rating">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/ESRB_2013_Everyone_10%2B.png" alt="ESRB Rating" class="rating-img">
+                    <div class="rating-text">
+                        <small>Fantasy Violence, Use of Alcohol, Use of Tobacco, Simulated Gambling</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-info">
+                <div class="game-brand">Nintendo Switch</div>
+                <h1 class="game-title">Stardew Valley</h1>
+                <div class="game-price">
+                    <span class="price">$14.99</span>
+                </div>
+                <div class="game-rewards">
+                    <span class="gold-points">🟡 Eligible for up to 75 Gold Points</span>
+                </div>
+                <button class="download-btn" onclick="handleDownload()">
+                    ⬇️ Direct download
+                </button>
+                <p class="download-note">This game will be sent to your system automatically after purchase.</p>
+            </div>
+        </div>
+
+        <div class="game-details">
+            <div class="game-description">
+                <h2>Game Description</h2>
+                <p>You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home? It won't be easy. Ever since Joja Corporation came to town, the old ways of life have all but disappeared. The community center, once the town's most beloved gathering place, now lies in shambles. But the valley seems full of opportunity. With a little dedication, you might just be the one to restore Stardew Valley to greatness!</p>
+                
+                <p>Turn your overgrown field into a lively farm! Raise animals, grow crops, start an orchard, craft useful machines, and more! You'll have plenty of space to create the farm of your dreams.</p>
+                
+                <button class="read-more-btn" onclick="toggleDescription()">+ Read more</button>
+            </div>
+
+            <div class="game-artwork">
+                <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000001801/7aa9c6cf5e7d4cecf481f18b1d7a9d79e7aab85045b22203effb2dda409bc5b7" alt="Stardew Valley Artwork">
+            </div>
+        </div>
+
+        <div class="rating-section">
+            <div class="esrb-info">
+                <h3>ESRB rating</h3>
+                <div class="rating-details">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/ESRB_2013_Everyone_10%2B.png" alt="ESRB E10+" class="esrb-image">
+                    <div class="rating-content">
+                        <p><strong>Fantasy Violence, Use of Alcohol, Use of Tobacco, Simulated Gambling</strong></p>
+                        <p>Users Interact Online</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="play-modes">
+                <h3>Supported play modes</h3>
+                <div class="mode-icons">
+                    <div class="mode-item">
+                        <div class="mode-icon">📺</div>
+                        <span>TV</span>
+                    </div>
+                    <div class="mode-item">
+                        <div class="mode-icon">🎮</div>
+                        <span>Tabletop</span>
+                    </div>
+                    <div class="mode-item">
+                        <div class="mode-icon">📱</div>
+                        <span>Handheld</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-specs">
+            <div class="spec-grid">
+                <div class="spec-item">
+                    <div class="spec-icon">📅</div>
+                    <div class="spec-content">
+                        <h4>Release date</h4>
+                        <p>October 5, 2017</p>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-icon">👥</div>
+                    <div class="spec-content">
+                        <h4>No. of players</h4>
+                        <p><span class="highlight">Single System (1)</span> <span class="highlight">Local wireless (4)</span> <span class="highlight">Online (1-4)</span></p>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-icon">🎯</div>
+                    <div class="spec-content">
+                        <h4>Genre</h4>
+                        <p><span class="highlight">Role-Playing</span> <span class="highlight">Simulation</span></p>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-icon">🏢</div>
+                    <div class="spec-content">
+                        <h4>Publisher</h4>
+                        <p><span class="highlight">ConcernedApe</span></p>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-icon">⭐</div>
+                    <div class="spec-content">
+                        <h4>ESRB rating</h4>
+                        <p><span class="highlight">Everyone 10+</span></p>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-icon">🎮</div>
+                    <div class="spec-content">
+                        <h4>Supported play modes</h4>
+                        <p>TV mode, Tabletop mode, Handheld mode</p>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-icon">💾</div>
+                    <div class="spec-content">
+                        <h4>Game file size</h4>
+                        <p>1.5 GB</p>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-icon">🌍</div>
+                    <div class="spec-content">
+                        <h4>Supported languages</h4>
+                        <p>Japanese, French, German, Italian, Spanish, Korean, Portuguese, Russian, Simplified Chinese, Latin American Spanish, Traditional Chinese, American English</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nintendo-online-section">
+            <div class="online-content">
+                <div class="online-text">
+                    <div class="online-logo">Nintendo Online</div>
+                    <h3>Play online, access NES™ and Super NES™ games, and more with a Nintendo Switch Online membership.</h3>
+                    <p>This game supports: <span class="highlight">Online Play</span> <span class="highlight">Save Data Cloud</span></p>
+                    <button class="learn-more-btn">Learn more</button>
+                </div>
+                <div class="online-image">
+                    <img src="https://images.pexels.com/photos/159393/nintendo-nes-controller-gamepad-159393.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Nintendo Switch Pro Controller">
+                </div>
+            </div>
+        </div>
+
+        <div class="recently-viewed">
+            <h2>Recently viewed</h2>
+            <div class="games-carousel">
+                <div class="game-card">
+                    <img src="https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&w=200&h=250&fit=crop" alt="Super Mario Odyssey">
+                    <h4>Super Mario Odyssey™</h4>
+                    <p class="card-price">$59.99</p>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">♡</button>
+                </div>
+                <div class="game-card">
+                    <img src="https://images.pexels.com/photos/1293261/pexels-photo-1293261.jpeg?auto=compress&cs=tinysrgb&w=200&h=250&fit=crop" alt="Pokemon Let's Go Eevee">
+                    <h4>Pokémon™: Let's Go, Eevee!</h4>
+                    <p class="card-price">$59.99</p>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">♡</button>
+                </div>
+                <div class="game-card">
+                    <img src="https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=200&h=250&fit=crop" alt="This War of Mine">
+                    <h4>This War of Mine: Complete Edition</h4>
+                    <p class="card-price">
+                        <span class="sale-price">$1.99</span>
+                        <span class="original-price">$39.99</span>
+                    </p>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">♡</button>
+                </div>
+                <div class="game-card">
+                    <img src="https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=200&h=250&fit=crop" alt="Sword Art Online">
+                    <h4>SWORD ART ONLINE Hollow Realization Deluxe Edition</h4>
+                    <p class="card-price">
+                        <span class="sale-price">$7.49</span>
+                        <span class="original-price">$49.99</span>
+                    </p>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">♡</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="nintendo-footer-logo">
+                <img src="https://www.hatchwise.com/wp-content/uploads/2023/02/image-48.png" alt="Nintendo">
+            </div>
+            <div class="social-media">
+                <a href="#" class="social-icon">📘</a>
+                <a href="#" class="social-icon">📷</a>
+                <a href="#" class="social-icon">🐦</a>
+                <a href="#" class="social-icon">📺</a>
+            </div>
+        </div>
+        
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>About Nintendo</h4>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Corporate Social Responsibility</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Exclusives</a></li>
+                    <li><a href="#">Nintendo NY store</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Hardware</a></li>
+                    <li><a href="#">Merchandise</a></li>
+                    <li><a href="#">Sales & deals</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>My Nintendo Store orders</h4>
+                <ul>
+                    <li><a href="#">Order details</a></li>
+                    <li><a href="#">Shipping info</a></li>
+                    <li><a href="#">Returns & exchanges</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Nintendo Switch</a></li>
+                    <li><a href="#">Nintendo Account</a></li>
+                    <li><a href="#">Other systems</a></li>
+                    <li><a href="#">Repairs</a></li>
+                    <li><a href="#">Nintendo product recycling</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Parents</h4>
+                <ul>
+                    <li><a href="#">Info for parents</a></li>
+                    <li><a href="#">Parental controls</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Cookies and interest-based ads</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">Community guidelines</a></li>
+                    <li><a href="#">Online safety principles</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <p>© Nintendo. Games are property of their respective owners. Nintendo of America Inc. Headquarters are in Redmond, Washington</p>
+                <div class="footer-links">
+                    <a href="#">Contact us</a>
+                    <a href="#">Website feedback</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Documents & Policies</a>
+                </div>
+            </div>
+            <div class="esrb-footer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/ESRB_2013_Everyone_10%2B.png" alt="ESRB Rating">
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
