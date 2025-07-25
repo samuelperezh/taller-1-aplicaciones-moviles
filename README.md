@@ -5,3 +5,4 @@ Realizar el diagrama de clase usando UML el modelo del sistema que represente lo
 
 ## Evidencia
 ![Diagrama UML](diagrama.png)
+![Diagrama Manual](diagrama_manual.jpeg)
