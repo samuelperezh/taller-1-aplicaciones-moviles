@@ -1,0 +1,73 @@
+body{
+    background-color:lightblue;
+  }
+  #paisaje{
+    position:relative;
+    width:800px;
+    height:500px;
+    border:1px solid gray;
+    background:#00BFFF;
+    margin:30px auto;
+    overflow:hidden;
+  }
+  .objeto{
+    position:absolute;
+  }
+  #sol{
+    top:45px;
+    right:70px;
+  }
+  #nevado{
+    bottom:-17px;
+    left:-17px;
+  }
+  #nevado2{
+    bottom:-17px;
+    right:-30px;
+  }
+  #bici{
+    bottom:-25px;
+    left:350px;
+    z-index:1;
+  }
+  
+  #arbol{
+    right:80px;
+    bottom:-4px;
+    z-index:2;
+  }
+  /* Nube se mueve lentamente de izquierda a derecha */
+  #nube {
+    top: 50px;
+    left: -150px;
+    animation: moverNube 20s linear infinite;
+    animation-play-state: paused;
+  }
+  
+  @keyframes moverNube {
+    0% { left: -150px; }
+    100% { left: 850px; }
+  }
+  
+  /* Bicicleta rueda de izquierda a derecha y vuelve */
+  #bici {
+    animation: moverBici 6s ease-in-out infinite alternate;
+    animation-play-state: paused;
+  }
+  
+  @keyframes moverBici {
+    0% { left: 0px; }
+    100% { left: 650px; }
+  }
+  
+  /* El sol gira lentamente */
+  #sol {
+    animation: girarSol 10s linear infinite;
+    animation-play-state: paused;
+  }
+  
+  @keyframes girarSol {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
